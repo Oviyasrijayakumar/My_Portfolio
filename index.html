@@ -1,222 +1,1100 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oviyasri Jayakumar | Aspiring Software Developer & Web Enthusiast</title>
+  <meta name="description" content="Portfolio of Oviyasri Jayakumar - Aspiring Software Developer and Web Development Enthusiast based in Chennai, Tamil Nadu. Skilled in Python, HTML, CSS, JavaScript, C, and Java.">
+  <meta name="keywords" content="Oviyasri Jayakumar, Portfolio, Software Developer, Web Developer, Python, JavaScript, Chennai">
+  <meta name="author" content="Oviyasri Jayakumar">
 
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Oviyasri Jayakumar | Portfolio">
+  <meta property="og:description" content="Aspiring Software Developer | Web Development Enthusiast. B.E. Computer Science Engineering (CGPA 9.3).">
+  <meta property="og:type" content="website">
 
-<meta name="description"
-      content="Oviyasri J - Computer Science Engineering Student, Web Development Enthusiast and Quick Learner">
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<title>Oviyasri J | Student Portfolio</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="stylesheet" href="style.css">
-
-
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
 
-<!-- NAVBAR -->
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Oviyasri Jayakumar Home">
+        <span class="logo-badge">OJ</span>
+        <div class="logo-text">
+          <span class="logo-name">Oviyasri</span>
+          <span class="logo-dot">J</span>
+        </div>
+      </a>
 
-<nav class="navbar">
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-<a href="index.html" class="logo">
-    Oviyasri
-</a>
-
-<div class="nav-links">
-    <a href="index.html" class="nav-item active">Home</a>
-    <a href="about.html" class="nav-item">About</a>
-    <a href="skills.html" class="nav-item">Skills</a>
-    <a href="contact.html" class="nav-item">Contact</a>
-    <a href="contact.html" class="nav-btn">Hire Me</a>
-</div>
-
-
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-
-<div class="hero-content">
-
-    <p class="small-title">
-        WELCOME TO MY PORTFOLIO
-    </p>
-
-    <h1>
-        Hi, I'm <span>Oviyasri</span>.
-        <br>
-        I build my future with
-        <span>technology.</span>
-    </h1>
-
-    <p class="hero-text">
-        I am a Computer Science Engineering student passionate about
-        Web Development, programming and modern technologies.
-        I am also a quick learner who enjoys exploring new concepts
-        and improving my skills.
-    </p>
-
-    <div class="hero-buttons">
-
-        <a href="skills.html#projects" class="main-btn">
-            View My Work →
+      <!-- Header Action -->
+      <div class="header-actions">
+        <a href="https://wa.me/919514323265?text=Hi%20Oviyasri%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%21" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="btn-text">WhatsApp</span>
         </a>
-
-        <a href="contact.html" class="outline-btn">
-            Contact Me
-        </a>
-
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
     </div>
 
-    <div class="quick-info">
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-content">
+        <ul class="mobile-nav-links">
+          <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li><a href="#interests" class="mobile-nav-link"><i class="fa-solid fa-compass"></i> Interests</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+        <div class="drawer-footer">
+          <p class="drawer-contact-title">Quick Connect</p>
+          <div class="drawer-btns">
+            <a href="https://wa.me/919514323265" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+            </a>
+            <a href="mailto:oviyasrijayakumar2008@gmail.com" class="btn btn-outline w-full">
+              <i class="fa-regular fa-envelope"></i> Email Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <div>
-            <strong>7+</strong>
-            <span>Technical Skills</span>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-badge animate-fade-in">
+            <span class="status-pulse"></span>
+            <span>Open for Internships & Opportunities</span>
+          </div>
+
+          <h1 class="hero-title animate-fade-in delay-1">
+            Hi, I'm <span class="gradient-text">Oviyasri Jayakumar</span>
+          </h1>
+
+          <p class="hero-role animate-fade-in delay-2">
+            Aspiring Software Developer <span class="role-divider">•</span> Web Development Enthusiast
+          </p>
+
+          <p class="hero-bio animate-fade-in delay-3">
+            Passionate CS student from <strong>Chennai</strong> with a strong academic foundation (<strong>9.3 CGPA</strong>) and a drive to craft elegant, responsive web experiences and robust software solutions.
+          </p>
+
+          <!-- Quick Highlights Pills -->
+          <div class="hero-highlights animate-fade-in delay-3">
+            <span class="highlight-chip">
+              <i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu
+            </span>
+            <span class="highlight-chip">
+              <i class="fa-solid fa-award"></i> 9.3 CGPA • S.A. Engg College
+            </span>
+            <span class="highlight-chip">
+              <i class="fa-solid fa-language"></i> Tamil & English
+            </span>
+          </div>
+
+          <!-- Hero CTAs (WhatsApp & Mail Only) -->
+          <div class="hero-actions animate-fade-in delay-4">
+            <a href="https://wa.me/919514323265?text=Hi%20Oviyasri%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect%21" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <a href="mailto:oviyasrijayakumar2008@gmail.com?subject=Opportunity%20Inquiry%20-%20Oviyasri%20Portfolio" class="btn btn-outline btn-lg">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Send Email</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials animate-fade-in delay-4">
+            <span class="social-label">Follow & Explore:</span>
+            <a href="https://www.linkedin.com/in/oviyasri-jayakumar-236a88341" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Oviyasrijayakumar" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="tel:+919514323265" class="social-link" title="Call Me" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
         </div>
 
-        <div>
-            <strong>2+</strong>
-            <span>Years Learning</span>
+        <!-- Hero Visual / Photo Card -->
+        <div class="hero-visual animate-fade-in delay-2">
+          <div class="profile-card-wrapper">
+            <!-- Decorative rings -->
+            <div class="profile-ring"></div>
+            <div class="profile-ring-outer"></div>
+
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="assets/profile.png" alt="Oviyasri Jayakumar" class="profile-image" loading="eager">
+                <div class="profile-overlay-gradient"></div>
+              </div>
+              
+              <div class="profile-card-footer">
+                <div class="profile-status-indicator">
+                  <span class="dot-online"></span>
+                  <div>
+                    <h4 class="profile-name-tag">Oviyasri Jayakumar</h4>
+                    <p class="profile-sub-tag">B.E. Computer Science</p>
+                  </div>
+                </div>
+                <div class="quick-icons">
+                  <a href="https://wa.me/919514323265" target="_blank" rel="noopener noreferrer" class="mini-icon-btn whatsapp" title="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="mailto:oviyasrijayakumar2008@gmail.com" class="mini-icon-btn email" title="Send Email">
+                    <i class="fa-regular fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge: CGPA -->
+            <div class="floating-badge badge-cgpa">
+              <div class="badge-icon gold">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-value">9.3 CGPA</span>
+                <span class="badge-caption">B.E. Computer Science</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge: Projects -->
+            <div class="floating-badge badge-projects">
+              <div class="badge-icon indigo">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-value">3+ Projects</span>
+                <span class="badge-caption">Built & Deployed</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge: Tech Stacks -->
+            <div class="floating-badge badge-tech">
+              <div class="badge-icon green">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-value">Python & Web</span>
+                <span class="badge-caption">Modern Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & CAREER OBJECTIVE SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Code</h2>
+          <p class="section-subtitle">A glimpse into my journey, core values, and what drives my pursuit of software excellence.</p>
         </div>
 
-        <div>
-            <strong>∞</strong>
-            <span>Curiosity</span>
+        <div class="about-grid">
+          <!-- Career Objective Card -->
+          <div class="about-card objective-card glass-panel">
+            <div class="card-glow"></div>
+            <div class="objective-header">
+              <div class="icon-bubble indigo">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div>
+                <span class="card-eyebrow">Professional Direction</span>
+                <h3 class="card-title">Career Objective</h3>
+              </div>
+            </div>
+            <p class="objective-text">
+              Motivated and enthusiastic learner with a deep interest in software development and web technologies. Currently honing practical proficiency in <strong>Python, HTML, CSS, JavaScript, C</strong>, and <strong>basic Java</strong>.
+            </p>
+            <p class="objective-subtext">
+              Looking for impactful opportunities to apply technical knowledge through real-world projects, software internships, and collaborative engineering environments with continuous skill growth.
+            </p>
+            <div class="quote-box">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <span>"Striving to transform conceptual logic into beautiful, user-first digital experiences."</span>
+            </div>
+          </div>
+
+          <!-- Personal Bio Card -->
+          <div class="about-card personal-details-card glass-panel">
+            <div class="card-glow"></div>
+            <div class="objective-header">
+              <div class="icon-bubble teal">
+                <i class="fa-solid fa-id-card"></i>
+              </div>
+              <div>
+                <span class="card-eyebrow">Personal Snapshot</span>
+                <h3 class="card-title">Key Information</h3>
+              </div>
+            </div>
+
+            <div class="details-list">
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-calendar-day"></i></div>
+                <div class="detail-content">
+                  <span class="detail-label">Date of Birth</span>
+                  <span class="detail-value">18 January 2008</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <div class="detail-content">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Chennai, Tamil Nadu, India</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-language"></i></div>
+                <div class="detail-content">
+                  <span class="detail-label">Languages Known</span>
+                  <span class="detail-value">Tamil (Native) & English (Fluent)</span>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="detail-content">
+                  <span class="detail-label">Degree Focus</span>
+                  <span class="detail-value">B.E. Computer Science Engineering</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft skills tags -->
+            <div class="strengths-wrapper">
+              <span class="strengths-title">Core Competencies:</span>
+              <div class="strengths-pills">
+                <span class="pill">Quick Learner</span>
+                <span class="pill">Problem Solver</span>
+                <span class="pill">Team Collaboration</span>
+                <span class="pill">Adaptable</span>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- Metric Counter Strip -->
+        <div class="metric-strip">
+          <div class="metric-item">
+            <span class="metric-number">9.3</span>
+            <span class="metric-label">College CGPA</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">93.2%</span>
+            <span class="metric-label">10th Grade Score</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">87.8%</span>
+            <span class="metric-label">12th Grade Score</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">3+</span>
+            <span class="metric-label">Featured Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Consistent academic distinction and passion for computer science and engineering.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Track Line -->
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: College -->
+          <div class="timeline-item active">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="badge-status current">Undergraduate Degree</span>
+                  <h3 class="institution-name">S.A. Engineering College</h3>
+                  <p class="degree-title">B.E. Computer Science and Engineering</p>
+                </div>
+                <div class="grade-badge highlight">
+                  <span class="grade-label">Current CGPA</span>
+                  <span class="grade-score">9.3 / 10</span>
+                </div>
+              </div>
+              <p class="institution-desc">
+                Engaged in comprehensive study of computer science fundamentals, data structures, algorithm design, software engineering, and full-stack web development principles.
+              </p>
+              <div class="timeline-tags">
+                <span class="edu-tag"><i class="fa-solid fa-circle-check"></i> Department of CSE</span>
+                <span class="edu-tag"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</span>
+                <span class="edu-tag"><i class="fa-solid fa-award"></i> Academic Top Tier</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: 12th Grade -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="badge-status completed">Higher Secondary (12th)</span>
+                  <h3 class="institution-name">Girls Government Higher Secondary School</h3>
+                  <p class="degree-title">Kovur, Chennai</p>
+                </div>
+                <div class="grade-badge">
+                  <span class="grade-label">Percentage</span>
+                  <span class="grade-score">87.83%</span>
+                </div>
+              </div>
+              <p class="institution-desc">
+                Successfully completed higher secondary education with distinction in science and mathematics stream, building a robust analytical and logical foundation.
+              </p>
+              <div class="timeline-tags">
+                <span class="edu-tag"><i class="fa-solid fa-calendar"></i> Higher Secondary Certificate</span>
+                <span class="edu-tag"><i class="fa-solid fa-location-dot"></i> Kovur, Chennai</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 10th Grade -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="badge-status completed">Secondary School (10th)</span>
+                  <h3 class="institution-name">Girls Government Higher Secondary School</h3>
+                  <p class="degree-title">Kovur, Chennai</p>
+                </div>
+                <div class="grade-badge gold">
+                  <span class="grade-label">Percentage</span>
+                  <span class="grade-score">93.2%</span>
+                </div>
+              </div>
+              <p class="institution-desc">
+                Graduated secondary school with exceptional academic honors and high distinction across all core academic disciplines.
+              </p>
+              <div class="timeline-tags">
+                <span class="edu-tag"><i class="fa-solid fa-trophy"></i> 93.2% Distinction</span>
+                <span class="edu-tag"><i class="fa-solid fa-location-dot"></i> Kovur, Chennai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Skills & Competencies</h2>
+          <p class="section-subtitle">Technologies, development tools, and interpersonal strengths I bring to the table.</p>
+        </div>
+
+        <!-- Skill Tabs -->
+        <div class="skills-tabs">
+          <button class="tab-btn active" data-tab="technical">
+            <i class="fa-solid fa-code"></i> Technical Skills
+          </button>
+          <button class="tab-btn" data-tab="soft">
+            <i class="fa-solid fa-users"></i> Non-Technical Skills
+          </button>
+          <button class="tab-btn" data-tab="learning">
+            <i class="fa-solid fa-seedling"></i> Learning & Growing
+          </button>
+        </div>
+
+        <!-- Tab 1: Technical Skills -->
+        <div class="tab-content active" id="tab-technical">
+          <div class="skills-grid">
+            <!-- HTML5 -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap html">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">HTML5</h4>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <p class="skill-sub">Semantic layout, modern web markup & accessibility</p>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap css">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">CSS3</h4>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <p class="skill-sub">Flexbox, Grid, animations & modern styling techniques</p>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap js">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">JavaScript</h4>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <p class="skill-sub">ES6+, DOM manipulation, event handling & async logic</p>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap python">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">Python</h4>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <p class="skill-sub">Data structures, OOP, file handling & system scripts</p>
+              </div>
+            </div>
+
+            <!-- C Programming -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap cprog">
+                <i class="fa-solid fa-c"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">C Programming</h4>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <p class="skill-sub">Structured programming, logic building, memory management</p>
+              </div>
+            </div>
+
+            <!-- Java Basics -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap java">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">Java</h4>
+                  <span class="skill-level">Basics</span>
+                </div>
+                <p class="skill-sub">Object-Oriented fundamentals, classes, methods & logic</p>
+              </div>
+            </div>
+
+            <!-- API Integration -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap api">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">API Integration</h4>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+                <p class="skill-sub">REST APIs, JSON parsing, asynchronous Fetch requests</p>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap web">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">Web Development</h4>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <p class="skill-sub">Building interactive, dynamic, client-side web applications</p>
+              </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="skill-card">
+              <div class="skill-icon-wrap responsive">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div class="skill-details">
+                <div class="skill-header">
+                  <h4 class="skill-name">Responsive Design</h4>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <p class="skill-sub">Mobile-first layouts, adaptive viewports, fluid media</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Soft Skills -->
+        <div class="tab-content" id="tab-soft">
+          <div class="soft-skills-grid">
+            <div class="soft-skill-card">
+              <div class="soft-icon blue"><i class="fa-solid fa-comments"></i></div>
+              <h4>Communication</h4>
+              <p>Articulating ideas clearly, collaborating transparently across teams, and active listening.</p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon purple"><i class="fa-solid fa-people-group"></i></div>
+              <h4>Teamwork</h4>
+              <p>Thriving in group projects, supporting peers, and contributing positively to shared outcomes.</p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon amber"><i class="fa-solid fa-crown"></i></div>
+              <h4>Leadership</h4>
+              <p>Taking initiative, guiding academic project efforts, and maintaining team momentum.</p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon green"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Quick Learning</h4>
+              <p>Rapidly absorbing new paradigms, frameworks, syntax, and problem-solving methodologies.</p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon rose"><i class="fa-solid fa-puzzle-piece"></i></div>
+              <h4>Problem Solving</h4>
+              <p>Breaking complex technical requirements down into structured, solvable steps.</p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon cyan"><i class="fa-solid fa-clock"></i></div>
+              <h4>Time Management</h4>
+              <p>Prioritizing tasks systematically to deliver assignments and milestones on schedule.</p>
+            </div>
+
+            <div class="soft-skill-card">
+              <div class="soft-icon indigo"><i class="fa-solid fa-arrows-rotate"></i></div>
+              <h4>Adaptability</h4>
+              <p>Embracing evolving technologies, feedback, and shifting engineering needs with ease.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Learning & Development -->
+        <div class="tab-content" id="tab-learning">
+          <div class="learning-panel glass-panel">
+            <div class="learning-intro">
+              <div class="icon-bubble green">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div>
+                <h3>Continuous Learning Journey</h3>
+                <p>I believe in constant evolution and curiosity. Here are the core areas I am currently deepening my knowledge in every day:</p>
+              </div>
+            </div>
+
+            <div class="learning-badges-grid">
+              <div class="learning-item">
+                <span class="learning-check"><i class="fa-solid fa-circle-check"></i></span>
+                <div>
+                  <strong>Web Development</strong>
+                  <p>Advancing frontend interactivity, performance optimizations & clean design systems.</p>
+                </div>
+              </div>
+
+              <div class="learning-item">
+                <span class="learning-check"><i class="fa-solid fa-circle-check"></i></span>
+                <div>
+                  <strong>Python Programming</strong>
+                  <p>Deepening knowledge of automation, algorithms, data structures & application logic.</p>
+                </div>
+              </div>
+
+              <div class="learning-item">
+                <span class="learning-check"><i class="fa-solid fa-circle-check"></i></span>
+                <div>
+                  <strong>JavaScript (ES6+)</strong>
+                  <p>Mastering modern JavaScript concepts, Promises, Async/Await & Event-driven architecture.</p>
+                </div>
+              </div>
+
+              <div class="learning-item">
+                <span class="learning-check"><i class="fa-solid fa-circle-check"></i></span>
+                <div>
+                  <strong>API Integration</strong>
+                  <p>Connecting web frontends to third-party REST services and handling dynamic data flows.</p>
+                </div>
+              </div>
+
+              <div class="learning-item">
+                <span class="learning-check"><i class="fa-solid fa-circle-check"></i></span>
+                <div>
+                  <strong>Software Development</strong>
+                  <p>Learning modular code organization, version control (Git/GitHub), and testing principles.</p>
+                </div>
+              </div>
+
+              <div class="learning-item">
+                <span class="learning-check"><i class="fa-solid fa-circle-check"></i></span>
+                <div>
+                  <strong>Problem Solving & Fundamentals</strong>
+                  <p>Strengthening algorithmic thinking, edge case analysis, and clean procedural logic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built to demonstrate programming logic, API integration, and user-centric design.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Student Management System -->
+          <div class="project-card glass-panel">
+            <div class="project-banner python-theme">
+              <div class="project-icon-top">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+              <span class="project-category-badge">Python Software</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="tech-tag"><i class="fa-solid fa-database"></i> Data Mgmt</span>
+                <span class="tech-tag"><i class="fa-solid fa-terminal"></i> CLI / Logic</span>
+              </div>
+
+              <h3 class="project-title">Student Management System</h3>
+              
+              <p class="project-description">
+                A software application developed to manage and organize comprehensive student academic records efficiently with structured data manipulation operations.
+              </p>
+
+              <div class="project-features">
+                <h4 class="features-heading">Key Features:</h4>
+                <ul class="features-list">
+                  <li><i class="fa-solid fa-check"></i> Add new student details with unique identifiers</li>
+                  <li><i class="fa-solid fa-check"></i> Update existing student information in real time</li>
+                  <li><i class="fa-solid fa-check"></i> Delete student records with validation</li>
+                  <li><i class="fa-solid fa-check"></i> View and search individual or complete student lists</li>
+                  <li><i class="fa-solid fa-check"></i> Basic structured student data management & validation</li>
+                </ul>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-indicator"></span> Completed Project
+                </div>
+                <a href="https://github.com/Oviyasrijayakumar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Weather Forecast Application -->
+          <div class="project-card glass-panel">
+            <div class="project-banner weather-theme">
+              <div class="project-icon-top">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+              </div>
+              <span class="project-category-badge">Web Application</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-tag"><i class="fa-solid fa-bolt"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fa-solid fa-cloud"></i> Weather API</span>
+              </div>
+
+              <h3 class="project-title">Weather Forecast Application</h3>
+              
+              <p class="project-description">
+                A clean, interactive web application concept that queries live meteorological data and displays weather conditions dynamically using asynchronous API integration.
+              </p>
+
+              <div class="project-features">
+                <h4 class="features-heading">Key Features:</h4>
+                <ul class="features-list">
+                  <li><i class="fa-solid fa-check"></i> Dynamic real-time weather information display</li>
+                  <li><i class="fa-solid fa-check"></i> Asynchronous REST API integration & JSON handling</li>
+                  <li><i class="fa-solid fa-check"></i> User-friendly, clean & intuitive UI layout</li>
+                  <li><i class="fa-solid fa-check"></i> Responsive web-based implementation for all devices</li>
+                  <li><i class="fa-solid fa-check"></i> Visual weather state indicators & temperature reading</li>
+                </ul>
+              </div>
+
+              <!-- Interactive Live Weather Simulation -->
+              <div class="interactive-weather-demo" id="weatherDemo">
+                <div class="weather-demo-header">
+                  <span class="demo-tag"><i class="fa-solid fa-circle-dot"></i> Live Concept Demo</span>
+                  <span class="demo-city">Chennai, TN</span>
+                </div>
+                <div class="weather-demo-content">
+                  <div class="weather-temp">
+                    <span class="temp-num">31°C</span>
+                    <span class="temp-condition"><i class="fa-solid fa-sun weather-icon-sun"></i> Sunny & Breezy</span>
+                  </div>
+                  <div class="weather-stats">
+                    <span>Humidity: 68%</span>
+                    <span>Wind: 14 km/h</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-indicator"></span> API Integrated
+                </div>
+                <a href="https://github.com/Oviyasrijayakumar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Personal Portfolio Website -->
+          <div class="project-card glass-panel">
+            <div class="project-banner portfolio-theme">
+              <div class="project-icon-top">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <span class="project-category-badge">Personal Portfolio</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive</span>
+              </div>
+
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              
+              <p class="project-description">
+                A responsive personal portfolio website crafted to showcase skills, projects, learning milestones, and provide seamless contact channels for career opportunities.
+              </p>
+
+              <div class="project-features">
+                <h4 class="features-heading">Key Features:</h4>
+                <ul class="features-list">
+                  <li><i class="fa-solid fa-check"></i> About Me and Career Objective spotlight</li>
+                  <li><i class="fa-solid fa-check"></i> Interactive Skills and Academic timeline showcase</li>
+                  <li><i class="fa-solid fa-check"></i> Dedicated Projects and Areas of Interest displays</li>
+                  <li><i class="fa-solid fa-check"></i> Direct WhatsApp & Email communication channels</li>
+                  <li><i class="fa-solid fa-check"></i> Polished light-theme design with mobile responsiveness</li>
+                </ul>
+              </div>
+
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-indicator online"></span> Live Now
+                </div>
+                <a href="#hero" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up"></i> Explore Live
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS OF INTEREST SECTION -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Passions & Focus</span>
+          <h2 class="section-title">Areas of Interest</h2>
+          <p class="section-subtitle">Domains in tech where I love spending time building, problem-solving, and innovating.</p>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Interest 1: Web Development -->
+          <div class="interest-card glass-panel">
+            <div class="interest-icon indigo">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="interest-title">Web Development</h3>
+            <p class="interest-desc">
+              Architecting smooth, intuitive, and modern web applications that provide seamless digital experiences across all devices.
+            </p>
+          </div>
+
+          <!-- Interest 2: Software Development -->
+          <div class="interest-card glass-panel">
+            <div class="interest-icon purple">
+              <i class="fa-solid fa-laptop-file"></i>
+            </div>
+            <h3 class="interest-title">Software Development</h3>
+            <p class="interest-desc">
+              Building structured, maintainable software systems with clean architecture, robust logic, and optimal algorithmic performance.
+            </p>
+          </div>
+
+          <!-- Interest 3: Python Programming -->
+          <div class="interest-card glass-panel">
+            <div class="interest-icon amber">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h3 class="interest-title">Python Programming</h3>
+            <p class="interest-desc">
+              Harnessing Python's expressive syntax and rich ecosystem for scripting, data manipulation, automation, and backend solutions.
+            </p>
+          </div>
+
+          <!-- Interest 4: Frontend Development -->
+          <div class="interest-card glass-panel">
+            <div class="interest-icon teal">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="interest-title">Frontend Development</h3>
+            <p class="interest-desc">
+              Designing delightful user interfaces with responsive styling, smooth micro-interactions, accessibility, and high performance.
+            </p>
+          </div>
+
+          <!-- Interest 5: Application Development -->
+          <div class="interest-card glass-panel">
+            <div class="interest-icon rose">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3 class="interest-title">Application Development</h3>
+            <p class="interest-desc">
+              Conceptualizing and engineering purposeful applications from scratch that solve everyday problems for users.
+            </p>
+          </div>
+
+          <!-- Interest 6: Learning New Technologies -->
+          <div class="interest-card glass-panel">
+            <div class="interest-icon green">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3 class="interest-title">Learning New Technologies</h3>
+            <p class="interest-desc">
+              Staying curious and quick to adopt emerging development tools, modern frameworks, and engineering best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (WhatsApp & Email Exclusive - No Forms) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-subtitle">Reach out directly via WhatsApp or Email. No forms needed — click below to start a conversation!</p>
+        </div>
+
+        <div class="contact-hub">
+          <!-- WhatsApp Contact Card -->
+          <div class="contact-card whatsapp-card glass-panel">
+            <div class="contact-card-icon whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-badge whatsapp-badge">Instant Messaging</span>
+              <h3 class="contact-card-title">Chat on WhatsApp</h3>
+              <p class="contact-card-desc">
+                Fastest way to connect with me. Click below to initiate a direct WhatsApp conversation or message.
+              </p>
+              <div class="contact-info-pill">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 95143 23265</span>
+              </div>
+              <div class="contact-actions-row">
+                <a href="https://wa.me/919514323265?text=Hello%20Oviyasri%2C%20I%20am%20reaching%20out%20after%20viewing%20your%20portfolio." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-action">
+                  <i class="fa-brands fa-whatsapp"></i> Open WhatsApp Chat
+                </a>
+                <button class="btn btn-icon-only copy-btn" data-copy="+919514323265" title="Copy Phone Number" aria-label="Copy phone number">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Contact Card -->
+          <div class="contact-card email-card glass-panel">
+            <div class="contact-card-icon email">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-badge email-badge">Direct Inbox</span>
+              <h3 class="contact-card-title">Send an Email</h3>
+              <p class="contact-card-desc">
+                Ideal for internship inquiries, project discussions, or detailed queries. I reply promptly!
+              </p>
+              <div class="contact-info-pill">
+                <i class="fa-solid fa-at"></i>
+                <span class="truncate-email">oviyasrijayakumar2008@gmail.com</span>
+              </div>
+              <div class="contact-actions-row">
+                <a href="mailto:oviyasrijayakumar2008@gmail.com?subject=Opportunity%20Inquiry%20-%20Oviyasri%20Portfolio" class="btn btn-primary btn-action">
+                  <i class="fa-regular fa-envelope"></i> Compose Email
+                </a>
+                <button class="btn btn-icon-only copy-btn" data-copy="oviyasrijayakumar2008@gmail.com" title="Copy Email Address" aria-label="Copy email address">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social & Quick Info Banner -->
+        <div class="contact-sub-banner glass-panel">
+          <div class="sub-banner-left">
+            <h4>Connect on Social & Professional Networks</h4>
+            <p>Check out my code repositories and professional background on LinkedIn and GitHub.</p>
+          </div>
+          <div class="sub-banner-right">
+            <a href="https://www.linkedin.com/in/oviyasri-jayakumar-236a88341" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+            </a>
+            <a href="https://github.com/Oviyasrijayakumar" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Quick WhatsApp Floating Button -->
+  <a href="https://wa.me/919514323265?text=Hi%20Oviyasri%2C%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20say%20hello%21" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="Message me on WhatsApp" aria-label="Message on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-whatsapp-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="logo-badge">OJ</span>
+          <span class="footer-name">Oviyasri Jayakumar</span>
+        </div>
+        <p class="footer-tagline">
+          Aspiring Software Developer • Computer Science Engineering • Chennai, India
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-social-icons">
+          <a href="https://wa.me/919514323265" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="mailto:oviyasrijayakumar2008@gmail.com" title="Email" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/oviyasri-jayakumar-236a88341" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Oviyasrijayakumar" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="footer-copyright">
+          © <span id="currentYear"></span> Oviyasri Jayakumar. All rights reserved.
+        </p>
+      </div>
     </div>
+  </footer>
 
-</div>
-
-
-<div class="hero-image">
-
-    <div class="image-glow"></div>
-
-    <div class="image-frame">
-
-        <img
-            src="images/portfoliopic.jpg"
-            alt="Oviyasri J"
-        >
-
-    </div>
-
-    <div class="floating-card card-one">
-        <span>💻</span>
-        Web Development
-    </div>
-
-    <div class="floating-card card-two">
-        <span>🚀</span>
-        Quick Learner
-    </div>
-
-</div>
-
-</section>
-
-<!-- FEATURE CARDS -->
-
-<section class="features">
-
-
-<div class="feature-box">
-
-    <div class="feature-icon">🎓</div>
-
-    <h3>Computer Science</h3>
-
-    <p>
-        Building a strong foundation in programming,
-        software development and computer science concepts.
-    </p>
-
-</div>
-
-
-<div class="feature-box">
-
-    <div class="feature-icon">💻</div>
-
-    <h3>Web Development</h3>
-
-    <p>
-        Learning to create responsive and user-friendly
-        websites using modern web technologies.
-    </p>
-
-</div>
-
-
-<div class="feature-box">
-
-    <div class="feature-icon">⚡</div>
-
-    <h3>Quick Learner</h3>
-
-    <p>
-        Always curious to learn new technologies,
-        practice concepts and improve my skills.
-    </p>
-
-</div>
-
-
-</section>
-
-<!-- CTA -->
-
-<section class="home-cta">
-
-<p class="small-title">LET'S CONNECT</p>
-
-<h2>
-    Have an idea or opportunity?
-</h2>
-
-<p>
-    I'm always interested in learning, building and
-    exploring new opportunities.
-</p>
-
-<a href="contact.html" class="main-btn">
-    Get In Touch →
-</a>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<h3>Oviyasri</h3>
-
-<p>
-    Computer Science Engineering Student
-</p>
-
-<div class="social-links">
-    <a href="#" target="_blank">LinkedIn</a>
-    <a href="#" target="_blank">Gmail</a>
-    <a href="#" target="_blank">GitHub</a>
-</div>
-
-<p class="copyright">
-    © 2026 Oviyasri J. All Rights Reserved.
-</p>
-
-
-</footer>
-
-<script src="script.js"></script>
-
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
